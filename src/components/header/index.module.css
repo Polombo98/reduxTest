@@ -1,0 +1,52 @@
+.header {
+	width: 100vw;
+	height: 200;
+	background-color: #7d0712;
+}
+
+.logoWrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.logo {
+	height: 70px;
+}
+
+.headerRow {
+	align-items: center;
+}
+
+.headerCol {
+	display: flex;
+}
+
+.headerText {
+	font-size: xx-large;
+	color: #f1f1f1;
+}
+
+.textWrapper {
+	text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media (max-width: 768px) {
+	.headerText {
+		text-align: center;
+	}
+}
