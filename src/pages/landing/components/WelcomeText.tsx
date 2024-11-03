@@ -26,23 +26,23 @@ const WelcomeText: FC = () => {
 			<h3>How It Works</h3>
 			<ol>
 				<li>
-					Pick Your User: <b />
+					Pick Your User: <br />
 					Press login button on header and on the login modal, select
 					your user from the list of available items fetched from our
 					backend.
 				</li>
 				<li>
-					Explore the Dashboard: <b />
+					Explore the Dashboard: <br />
 					Access your personalized dashboard featuring your current
 					tasks.
 				</li>
 				<li>
-					Manage Your Tasks: <b />
+					Manage Your Tasks: <br />
 					Add new tasks, edit existing ones, or mark them as completed
 					to stay organized.
 				</li>
 				<li>
-					Need Guidance?: <b />
+					Need Guidance?: <br />
 					Check out our short user guide below to make the most out of
 					TaskTrack.
 				</li>
@@ -50,29 +50,30 @@ const WelcomeText: FC = () => {
 			<h3>Short User Guide</h3>
 			<ul>
 				<li>
-					Adding a Task: <b />
-					Click the “Add Task” button.
-					<b />
-					Enter the task details and, optionally, set a due date.
+					Adding a Task: <br />
+					Click the “Add Todo” button.
+					<br />
+					Enter the task details.
 				</li>
 				<li>
-					Editing a Task: <b />
-					Click on the icon near the task you wish to edit.
-					<b />
-					Modify the details as needed and save your changes.
+					Editing a Task: <br />
+					Doubleclick on the description field and then edit the item.
+					<br />
+					Modify the details as needed and press enter to save your
+					changes.
 				</li>
 				<li>
-					Completing a Task: <b />
+					Completing a Task: <br />
 					Click the checkbox next to the task to mark it as completed.
 				</li>
 				<li>
-					Deleting a Task: <b />
-					Select the task and click the button to remove it from your
+					Deleting a Task: <br />
+					Choose the task and click the button to remove it from your
 					list.
 				</li>
 				<li>
-					Switching Users: <b />
-					Log out from the menu and select a different username to
+					Switching Users: <br />
+					Log out from the header and select a different username to
 					switch accounts.
 				</li>
 			</ul>

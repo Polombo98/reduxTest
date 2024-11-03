@@ -6,6 +6,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import AuthButton from "../authButton";
 import LoginModal from "../loginModal";
 import LogoutModal from "../logoutModal";
+import { Link } from "react-router-dom";
 
 type HeaderProps = {
 	isAuthorized?: boolean;
@@ -40,8 +41,8 @@ const Header: FC<HeaderProps> = ({ isAuthorized }) => {
 									md={6}
 									className={styles.logoWrapper}
 								>
-									<a
-										href="/"
+									<Link
+										to=""
 										className={`align-items-center d-flex`}
 									>
 										<img
@@ -49,7 +50,7 @@ const Header: FC<HeaderProps> = ({ isAuthorized }) => {
 											className={styles.logo}
 											alt="logo"
 										/>
-									</a>
+									</Link>
 								</Col>
 								<Col
 									xs={12}
@@ -83,7 +84,6 @@ const Header: FC<HeaderProps> = ({ isAuthorized }) => {
 				  )
 				: createPortal(
 						<LogoutModal
-							handleLogout={() => {}}
 							show={isLogoutModalVisible}
 							handleClose={toggleLogout}
 						/>,

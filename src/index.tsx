@@ -1,15 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import { Provider } from "react-redux";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { routes } from "./constants";
 import Error from "./pages/error";
 import App from "./App";
+import { setupStore } from "./store";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import "ag-grid-community/styles/ag-grid.css"; // Mandatory CSS required by the Data Grid
+import "ag-grid-community/styles/ag-theme-quartz.css"; // Optional Theme applied to the Data Grid
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
 	{
 		errorElement: <Error />,
 		element: <App />,
@@ -21,9 +25,13 @@ const root = ReactDOM.createRoot(
 	document.getElementById("root") as HTMLElement
 );
 
+const store = setupStore();
+
 root.render(
 	<React.StrictMode>
-		<RouterProvider router={router} fallbackElement={<Error />} />
+		<Provider store={store}>
+			<RouterProvider router={router} />
+		</Provider>
 	</React.StrictMode>
 );
 
