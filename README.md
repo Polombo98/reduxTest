@@ -1,7 +1,3 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Overview
 
 The app allows users to add, edit, and delete todos, while providing a summary page that displays a breakdown of each user’s completed and incomplete todos. Built with [React](https://reactjs.org/), [Redux Toolkit](https://redux-toolkit.js.org/), [React-Bootstrap](https://react-bootstrap.github.io/), and [Ag-Grid](https://www.ag-grid.com/).
