@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Overview
+
+The app allows users to add, edit, and delete todos, while providing a summary page that displays a breakdown of each user’s completed and incomplete todos. Built with [React](https://reactjs.org/), [Redux Toolkit](https://redux-toolkit.js.org/), [React-Bootstrap](https://react-bootstrap.github.io/), and [Ag-Grid](https://www.ag-grid.com/).
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -29,18 +33,44 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Setup and Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Prerequisites
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Ensure you have the following installed:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+-   [Node.js and npm](https://nodejs.org/)
+-   [Git](https://git-scm.com/)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Installation
 
-## Learn More
+1. _Clone the repository:_
+   `git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. _Install dependencies:_
+   `npm install`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Deployment
+
+### Continuous Deployment Setup
+
+This project is configured for continuous deployment using [Vercel](https://vercel.com/)
+
+1. Connect your repository
+2. Configure automatic deployments
+
+### Manual Deployment
+
+1. Build the project:
+   `npm run build`
+2. Deploy the contents of the build/ folder to your hosting platform.
+
+## Contributing
+
+1. _Fork the repository._
+2. _Clone your fork:_
+   `git clone https://github.com/your-username/your-repo-name.git`
+3. _Create a feature branch:_
+   `git checkout -b feature/your-feature-name`
+4. _Commit your changes and open a pull request._
